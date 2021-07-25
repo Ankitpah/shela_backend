@@ -1,0 +1,86 @@
+/* All the configuration to be used on the production server of the project*/
+
+{
+    "dbServer":
+    {
+      //   "url": "mongodb://127.0.0.1:27017/shela_live",
+      // "option":{
+       //    "user": "shela89283",
+        //   "pass": "jsU20Jl2343"
+      // } 
+
+       "url": "mongodb://192.168.1.153:27017/shela_live",
+       "option":{
+           "user": "",
+           "pass": ""
+       }
+    },
+    "token":
+    {
+        "secret": "iA4pbUBBjKkvQchJApTEj0WVczZfgsyk"
+    },
+    "webServer":
+    {
+        "port": 8255,
+        "host": "192.168.1.149",
+       // "url": "http://api.shelarecruitment.co.uk"
+        "url": "http://192.168.1.149:8255"
+    },
+    "logger":
+    {
+        "logStart": false,
+        "file":
+        {
+            "filename": "logs/logs.json",
+            "level": "silly",
+            "handleExceptions": true,
+            "json": true,
+            "maxsize": 512000,
+            "maxFiles": 5,
+            "colorize": false
+        },
+        "console":
+        {
+            "level": "debug",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        },
+        "http":
+        {}
+    },
+    "email":
+    {
+        "service": "godaddy",
+        "auth":
+        {
+            "user": "info@shelarecruitment.co.uk",
+            "password": "maxnap@123"
+        },
+        "from": "Shela <info@shelarecruitment.co.uk>"
+    },
+    "queueServer":
+    {
+        "disabled": false,
+        "name": "offline",
+        "port": 6379,
+        "host": "127.0.0.1",
+        "ns": "offline",
+        "timeout": "30 * 60 * 1000",
+        "processors":
+        {
+            "dir": "processors",
+            "default":
+            {
+                "dir": "defaults",
+                "file": "default.js"
+            }
+        },
+        "context":
+        {
+            "serializer": "(ctx) => Promise.cast(ctx)",
+            "deserializer": "(ctx) => Promise.cast(ctx)",
+            "processors": "(ctx) => Promise.resolve(null)"
+        }
+    }
+}

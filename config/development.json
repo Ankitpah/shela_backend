@@ -1,0 +1,80 @@
+/* All the configuration to be used on the production server of the project*/
+
+{
+    "dbServer":
+    {
+        "url": "mongodb+srv://sheladb:sheladb123@cluster0.tvtny.mongodb.net/sheladb?retryWrites=true&w=majority",
+        "option":{
+           "user": "",
+           "pass": "",
+           "useNewUrlParser":true
+        }
+    },
+    "token":
+    {
+        "secret": "iA4pbUBBjKkvQchJApTEj0WVczZfgsyk"
+    },
+    "webServer":
+    {
+        "port": 80,
+        "host": "0.0.0.0",
+        "url": "https://api.shelarecruitment.co.uk"
+    },
+    "logger":
+    {
+        "logStart": false,
+        "file":
+        {
+            "filename": "logs/logs.json",
+            "level": "silly",
+            "handleExceptions": true,
+            "json": true,
+            "maxsize": 512000,
+            "maxFiles": 5,
+            "colorize": false
+        },
+        "console":
+        {
+            "level": "debug",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        },
+        "http":
+        {}
+    },
+    "email":
+    {
+        "service": "Gmail",
+        "auth":
+        {
+            "user": "shelarecruitment@gmail.com",
+            "password": "jedaiah11@"
+        },
+        "from": "Shela <shelarecruitment@gmail.com>"
+    },
+    "queueServer":
+    {
+        "disabled": false,
+        "name": "offline",
+        "port": 6379,
+        "host": "127.0.0.1",
+        "ns": "offline",
+        "timeout": "30 * 60 * 1000",
+        "processors":
+        {
+            "dir": "processors",
+            "default":
+            {
+                "dir": "defaults",
+                "file": "default.js"
+            }
+        },
+        "context":
+        {
+            "serializer": "(ctx) => Promise.cast(ctx)",
+            "deserializer": "(ctx) => Promise.cast(ctx)",
+            "processors": "(ctx) => Promise.resolve(null)"
+        }
+    }
+}

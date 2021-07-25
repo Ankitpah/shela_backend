@@ -1,0 +1,230 @@
+{"level":"silly","message":"[boot:settings:preparation:configure] started","timestamp":"2020-09-10T11:05:28.421Z"}
+{"took":0.002,"level":"silly","message":"[boot:settings:preparation:configure] took: 0.002 second(s)","timestamp":"2020-09-10T11:05:28.422Z"}
+{"level":"silly","message":"[boot:database:configure] started","timestamp":"2020-09-10T11:05:28.663Z"}
+{"message":"[boot:database:configure] DB Connection Failed===","stack":"MongoNetworkError: failed to connect to server [192.168.1.153:27017] on first connect [MongoNetworkError: connect EHOSTUNREACH 192.168.1.153:27017]\n    at Pool.<anonymous> (/home/node-02/Downloads/Shelarec/server/node_modules/mongodb-core/lib/topologies/server.js:564:11)\n    at Pool.emit (events.js:180:13)\n    at Connection.<anonymous> (/home/node-02/Downloads/Shelarec/server/node_modules/mongodb-core/lib/connection/pool.js:317:12)\n    at Object.onceWrapper (events.js:272:13)\n    at Connection.emit (events.js:180:13)\n    at Socket.<anonymous> (/home/node-02/Downloads/Shelarec/server/node_modules/mongodb-core/lib/connection/connection.js:246:50)\n    at Object.onceWrapper (events.js:272:13)\n    at Socket.emit (events.js:180:13)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at process._tickCallback (internal/process/next_tick.js:114:19)","name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2020-09-10T11:05:34.682Z"}
+{"level":"silly","message":"[boot:settings:preparation:configure] started","timestamp":"2020-09-10T11:12:33.407Z"}
+{"took":0.002,"level":"silly","message":"[boot:settings:preparation:configure] took: 0.002 second(s)","timestamp":"2020-09-10T11:12:33.408Z"}
+{"level":"silly","message":"[boot:database:configure] started","timestamp":"2020-09-10T11:12:33.649Z"}
+{"level":"silly","message":"[boot:database:configure:components:models] started","timestamp":"2020-09-10T11:12:33.693Z"}
+{"took":0.076,"level":"silly","message":"[boot:database:configure:components:models] took: 0.076 second(s)","timestamp":"2020-09-10T11:12:33.769Z"}
+{"level":"info","message":"[boot:database:configure] DB Connected on ====== mongodb://localhost:27017/sheladb","timestamp":"2020-09-10T11:12:33.770Z"}
+{"took":0.125,"level":"silly","message":"[boot:database:configure] took: 0.125 second(s)","timestamp":"2020-09-10T11:12:33.774Z"}
+{"level":"silly","message":"[boot:settings:redis:configure] started","timestamp":"2020-09-10T11:12:33.838Z"}
+{"level":"info","message":"[boot:settings:redis:configure] redis bypass","timestamp":"2020-09-10T11:12:33.838Z"}
+{"took":0,"level":"silly","message":"[boot:settings:redis:configure] took: 0 second(s)","timestamp":"2020-09-10T11:12:33.838Z"}
+{"level":"silly","message":"[boot:settings:hapi:configure] started","timestamp":"2020-09-10T11:12:33.859Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes] started","timestamp":"2020-09-10T11:12:33.864Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] started","timestamp":"2020-09-10T11:12:33.865Z"}
+{"took":0.366,"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] took: 0.366 second(s)","timestamp":"2020-09-10T11:12:34.231Z"}
+{"took":0.367,"level":"silly","message":"[boot:settings:routes:Initialising routes] took: 0.367 second(s)","timestamp":"2020-09-10T11:12:34.231Z"}
+{"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] started","timestamp":"2020-09-10T11:12:34.409Z"}
+{"level":"silly","message":"[boot:settings:hapi:register] started","timestamp":"2020-09-10T11:12:34.409Z"}
+{"took":0.003,"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] took: 0.003 second(s)","timestamp":"2020-09-10T11:12:34.412Z"}
+{"level":"silly","message":"[boot:bin:server:init] started","timestamp":"2020-09-10T11:12:34.412Z"}
+{"level":"verbose","message":"[exchange:undefined] using environment: local","timestamp":"2020-09-10T11:12:34.413Z"}
+{"level":"verbose","message":"[exchange:undefined] listening on port: 8255","timestamp":"2020-09-10T11:12:34.413Z"}
+{"level":"verbose","message":"[exchange:undefined] server started : http://127.0.0.1:8255","timestamp":"2020-09-10T11:12:34.471Z"}
+{"took":0.059,"level":"silly","message":"[boot:bin:server:init] took: 0.059 second(s)","timestamp":"2020-09-10T11:12:34.471Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/documentation","timestamp":"2020-09-10T11:12:54.516Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/typography.css","timestamp":"2020-09-10T11:12:54.617Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/swagger-ui.js","timestamp":"2020-09-10T11:12:54.638Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/reset.css","timestamp":"2020-09-10T11:12:54.645Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/screen.css","timestamp":"2020-09-10T11:12:54.648Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery-1.8.0.min.js","timestamp":"2020-09-10T11:12:54.648Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.slideto.min.js","timestamp":"2020-09-10T11:12:54.649Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.wiggle.min.js","timestamp":"2020-09-10T11:12:54.649Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.ba-bbq.min.js","timestamp":"2020-09-10T11:12:54.655Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/handlebars-2.0.0.js","timestamp":"2020-09-10T11:12:54.656Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/js-yaml.min.js","timestamp":"2020-09-10T11:12:54.659Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/lodash.min.js","timestamp":"2020-09-10T11:12:54.659Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/highlight.7.3.pack.js","timestamp":"2020-09-10T11:12:54.662Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jsoneditor.min.js","timestamp":"2020-09-10T11:12:54.664Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/backbone-min.js","timestamp":"2020-09-10T11:12:54.664Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/extend.js","timestamp":"2020-09-10T11:12:54.668Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lang/translator.js","timestamp":"2020-09-10T11:12:54.670Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lang/en.js","timestamp":"2020-09-10T11:12:54.674Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/marked.js","timestamp":"2020-09-10T11:12:54.676Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/swagger-oauth.js","timestamp":"2020-09-10T11:12:54.682Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/print.css","timestamp":"2020-09-10T11:12:54.732Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/logo_small.png","timestamp":"2020-09-10T11:12:54.899Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swagger.json","timestamp":"2020-09-10T11:12:54.937Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/fonts/DroidSans-Bold.ttf","timestamp":"2020-09-10T11:12:55.131Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/fonts/DroidSans.ttf","timestamp":"2020-09-10T11:12:55.131Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/throbber.gif","timestamp":"2020-09-10T11:13:09.798Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/documentation","timestamp":"2020-09-10T11:14:17.858Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/typography.css","timestamp":"2020-09-10T11:14:17.910Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/reset.css","timestamp":"2020-09-10T11:14:17.931Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/screen.css","timestamp":"2020-09-10T11:14:17.932Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery-1.8.0.min.js","timestamp":"2020-09-10T11:14:17.935Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.slideto.min.js","timestamp":"2020-09-10T11:14:17.935Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.wiggle.min.js","timestamp":"2020-09-10T11:14:17.936Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.ba-bbq.min.js","timestamp":"2020-09-10T11:14:17.936Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/handlebars-2.0.0.js","timestamp":"2020-09-10T11:14:17.939Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/js-yaml.min.js","timestamp":"2020-09-10T11:14:17.939Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/lodash.min.js","timestamp":"2020-09-10T11:14:17.955Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/backbone-min.js","timestamp":"2020-09-10T11:14:17.959Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/swagger-ui.js","timestamp":"2020-09-10T11:14:17.969Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/highlight.7.3.pack.js","timestamp":"2020-09-10T11:14:17.970Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jsoneditor.min.js","timestamp":"2020-09-10T11:14:17.972Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/marked.js","timestamp":"2020-09-10T11:14:17.973Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/swagger-oauth.js","timestamp":"2020-09-10T11:14:17.973Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/extend.js","timestamp":"2020-09-10T11:14:17.974Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lang/translator.js","timestamp":"2020-09-10T11:14:17.985Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lang/en.js","timestamp":"2020-09-10T11:14:17.988Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/print.css","timestamp":"2020-09-10T11:14:18.134Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/logo_small.png","timestamp":"2020-09-10T11:14:18.140Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/fonts/DroidSans.ttf","timestamp":"2020-09-10T11:14:18.144Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swagger.json","timestamp":"2020-09-10T11:14:18.159Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/fonts/DroidSans-Bold.ttf","timestamp":"2020-09-10T11:14:18.337Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/favicon-32x32.png","timestamp":"2020-09-10T11:14:18.353Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/throbber.gif","timestamp":"2020-09-10T11:14:20.148Z"}
+{"level":"silly","message":"[boot:settings:preparation:configure] started","timestamp":"2020-09-10T11:14:47.231Z"}
+{"took":0.002,"level":"silly","message":"[boot:settings:preparation:configure] took: 0.002 second(s)","timestamp":"2020-09-10T11:14:47.232Z"}
+{"level":"silly","message":"[boot:database:configure] started","timestamp":"2020-09-10T11:14:47.468Z"}
+{"level":"silly","message":"[boot:database:configure:components:models] started","timestamp":"2020-09-10T11:14:47.514Z"}
+{"took":0.078,"level":"silly","message":"[boot:database:configure:components:models] took: 0.078 second(s)","timestamp":"2020-09-10T11:14:47.592Z"}
+{"level":"info","message":"[boot:database:configure] DB Connected on ====== mongodb://localhost:27017/sheladb","timestamp":"2020-09-10T11:14:47.592Z"}
+{"took":0.128,"level":"silly","message":"[boot:database:configure] took: 0.128 second(s)","timestamp":"2020-09-10T11:14:47.596Z"}
+{"level":"silly","message":"[boot:settings:redis:configure] started","timestamp":"2020-09-10T11:14:47.658Z"}
+{"level":"info","message":"[boot:settings:redis:configure] redis bypass","timestamp":"2020-09-10T11:14:47.658Z"}
+{"took":0.001,"level":"silly","message":"[boot:settings:redis:configure] took: 0.001 second(s)","timestamp":"2020-09-10T11:14:47.659Z"}
+{"level":"silly","message":"[boot:settings:hapi:configure] started","timestamp":"2020-09-10T11:14:47.679Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes] started","timestamp":"2020-09-10T11:14:47.684Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] started","timestamp":"2020-09-10T11:14:47.684Z"}
+{"took":0.358,"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] took: 0.358 second(s)","timestamp":"2020-09-10T11:14:48.042Z"}
+{"took":0.358,"level":"silly","message":"[boot:settings:routes:Initialising routes] took: 0.358 second(s)","timestamp":"2020-09-10T11:14:48.042Z"}
+{"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] started","timestamp":"2020-09-10T11:14:48.223Z"}
+{"level":"silly","message":"[boot:settings:hapi:register] started","timestamp":"2020-09-10T11:14:48.223Z"}
+{"took":0.003,"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] took: 0.003 second(s)","timestamp":"2020-09-10T11:14:48.226Z"}
+{"level":"silly","message":"[boot:bin:server:init] started","timestamp":"2020-09-10T11:14:48.226Z"}
+{"level":"verbose","message":"[exchange:undefined] using environment: local","timestamp":"2020-09-10T11:14:48.227Z"}
+{"level":"verbose","message":"[exchange:undefined] listening on port: 8255","timestamp":"2020-09-10T11:14:48.227Z"}
+{"level":"verbose","message":"[exchange:undefined] server started : http://127.0.0.1:8255","timestamp":"2020-09-10T11:14:48.281Z"}
+{"took":0.055,"level":"silly","message":"[boot:bin:server:init] took: 0.055 second(s)","timestamp":"2020-09-10T11:14:48.281Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/documentation","timestamp":"2020-09-10T11:14:50.474Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/typography.css","timestamp":"2020-09-10T11:14:50.552Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/reset.css","timestamp":"2020-09-10T11:14:50.559Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/screen.css","timestamp":"2020-09-10T11:14:50.560Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery-1.8.0.min.js","timestamp":"2020-09-10T11:14:50.560Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.slideto.min.js","timestamp":"2020-09-10T11:14:50.561Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.wiggle.min.js","timestamp":"2020-09-10T11:14:50.561Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jquery.ba-bbq.min.js","timestamp":"2020-09-10T11:14:50.578Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/handlebars-2.0.0.js","timestamp":"2020-09-10T11:14:50.587Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/js-yaml.min.js","timestamp":"2020-09-10T11:14:50.588Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/lodash.min.js","timestamp":"2020-09-10T11:14:50.588Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/backbone-min.js","timestamp":"2020-09-10T11:14:50.589Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/swagger-ui.js","timestamp":"2020-09-10T11:14:50.589Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/highlight.7.3.pack.js","timestamp":"2020-09-10T11:14:50.590Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/jsoneditor.min.js","timestamp":"2020-09-10T11:14:50.599Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/marked.js","timestamp":"2020-09-10T11:14:50.600Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lib/swagger-oauth.js","timestamp":"2020-09-10T11:14:50.600Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/extend.js","timestamp":"2020-09-10T11:14:50.601Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lang/translator.js","timestamp":"2020-09-10T11:14:50.601Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/lang/en.js","timestamp":"2020-09-10T11:14:50.610Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/css/print.css","timestamp":"2020-09-10T11:14:50.628Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/logo_small.png","timestamp":"2020-09-10T11:14:50.665Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/fonts/DroidSans.ttf","timestamp":"2020-09-10T11:14:50.666Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swagger.json","timestamp":"2020-09-10T11:14:50.686Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/fonts/DroidSans-Bold.ttf","timestamp":"2020-09-10T11:14:50.868Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/favicon-32x32.png","timestamp":"2020-09-10T11:14:50.877Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:GET:/swaggerui/images/throbber.gif","timestamp":"2020-09-10T11:14:52.623Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:POST:/api/users/signUp","timestamp":"2020-09-10T11:15:02.194Z"}
+{"level":"verbose","message":"[exchange:undefined] onPostAuth:bodyPayload: {\"loginType\":1,\"fullName\":\"vvss\",\"userRole\":\"employee\",\"email\":\"vvss@yopmai.com\",\"password\":\"test@123\",\"offerCode\":\"\",\"creditType\":0,\"socialId\":\"\",\"timeZone\":\"Asia/Kolkata\"}","timestamp":"2020-09-10T11:15:02.197Z"}
+{"level":"silly","message":"[boot:users:service:signUp] started","timestamp":"2020-09-10T11:15:02.206Z"}
+{"level":"silly","message":"[boot:users:services:getUserByEmail:vvss@yopmai.com] started","timestamp":"2020-09-10T11:15:02.207Z"}
+{"took":0.01,"level":"silly","message":"[boot:users:services:getUserByEmail:vvss@yopmai.com] took: 0.01 second(s)","timestamp":"2020-09-10T11:15:02.217Z"}
+{"entity":"user","action":"sign-up","level":"debug","message":"[boot:undefined] immediately processing","timestamp":"2020-09-10T11:15:02.256Z"}
+{"handler":"/home/node-02/Downloads/Shelarec/server/processors/user/sign-up/default.js","level":"debug","message":"[boot:undefined] processing","timestamp":"2020-09-10T11:15:02.260Z"}
+{"level":"silly","message":"[processors:user:crete:process] started","timestamp":"2020-09-10T11:15:02.261Z"}
+{"took":0.055,"level":"silly","message":"[boot:users:service:signUp] took: 0.055 second(s)","timestamp":"2020-09-10T11:15:02.261Z"}
+{"level":"silly","message":"[processors:user:crete:process:utils:communication:forward] started","timestamp":"2020-09-10T11:15:02.270Z"}
+{"level":"silly","message":"[processors:user:crete:process:providers:smtp:send] started","timestamp":"2020-09-10T11:15:02.324Z"}
+{"took":0.073,"level":"silly","message":"[processors:user:crete:process:utils:communication:forward] took: 0.073 second(s)","timestamp":"2020-09-10T11:15:02.343Z"}
+{"took":0.082,"level":"silly","message":"[processors:user:crete:process] took: 0.082 second(s)","timestamp":"2020-09-10T11:15:02.343Z"}
+{"message":"[processors:user:crete:process:providers:smtp:send]","stack":"Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs\n534-5.7.14 fdUr0RvsuvFONhffi1R5y8U4RaXi0RZWz0m4QcKz9zVir_Uh8fkiJ4QgL6XRt2zkldXA3\n534-5.7.14 sqs7ZS4-fHnbqXRhvhASTbaTiYeEBCBp2zmGZCsIoVRq9I_1SsNiEkLUdfB3-PUd>\n534-5.7.14 Please log in via your web browser and then try again.\n534-5.7.14  Learn more at\n534 5.7.14  https://support.google.com/mail/answer/78754 n68sm5881203pfn.145 - gsmtp\n    at SMTPConnection._formatError (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:528:15)\n    at SMTPConnection._actionAUTHComplete (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:1231:30)\n    at SMTPConnection.<anonymous> (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:319:22)\n    at SMTPConnection._processResponse (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:669:16)\n    at SMTPConnection._onData (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:493:10)\n    at TLSSocket.emit (events.js:180:13)\n    at addChunk (_stream_readable.js:269:12)\n    at readableAddChunk (_stream_readable.js:256:11)\n    at TLSSocket.Readable.push (_stream_readable.js:213:10)\n    at TLSWrap.onread (net.js:578:20)","code":"EAUTH","response":"534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs\n534-5.7.14 fdUr0RvsuvFONhffi1R5y8U4RaXi0RZWz0m4QcKz9zVir_Uh8fkiJ4QgL6XRt2zkldXA3\n534-5.7.14 sqs7ZS4-fHnbqXRhvhASTbaTiYeEBCBp2zmGZCsIoVRq9I_1SsNiEkLUdfB3-PUd>\n534-5.7.14 Please log in via your web browser and then try again.\n534-5.7.14  Learn more at\n534 5.7.14  https://support.google.com/mail/answer/78754 n68sm5881203pfn.145 - gsmtp","responseCode":534,"command":"AUTH PLAIN","level":"error","timestamp":"2020-09-10T11:15:05.099Z"}
+{"level":"info","message":"[processors:user:crete:process:providers:smtp:send] Failed to send email to vvss@yopmai.com","timestamp":"2020-09-10T11:15:05.102Z"}
+{"took":2.779,"level":"silly","message":"[processors:user:crete:process:providers:smtp:send] took: 2.779 second(s)","timestamp":"2020-09-10T11:15:05.103Z"}
+{"level":"silly","message":"[boot:settings:preparation:configure] started","timestamp":"2020-09-10T11:22:32.273Z"}
+{"took":0.003,"level":"silly","message":"[boot:settings:preparation:configure] took: 0.003 second(s)","timestamp":"2020-09-10T11:22:32.274Z"}
+{"level":"silly","message":"[boot:database:configure] started","timestamp":"2020-09-10T11:22:32.511Z"}
+{"level":"silly","message":"[boot:database:configure:components:models] started","timestamp":"2020-09-10T11:22:32.555Z"}
+{"took":0.076,"level":"silly","message":"[boot:database:configure:components:models] took: 0.076 second(s)","timestamp":"2020-09-10T11:22:32.630Z"}
+{"level":"info","message":"[boot:database:configure] DB Connected on ====== mongodb://localhost:27017/sheladb","timestamp":"2020-09-10T11:22:32.630Z"}
+{"took":0.123,"level":"silly","message":"[boot:database:configure] took: 0.123 second(s)","timestamp":"2020-09-10T11:22:32.634Z"}
+{"level":"silly","message":"[boot:settings:redis:configure] started","timestamp":"2020-09-10T11:22:32.698Z"}
+{"level":"info","message":"[boot:settings:redis:configure] redis bypass","timestamp":"2020-09-10T11:22:32.698Z"}
+{"took":0.001,"level":"silly","message":"[boot:settings:redis:configure] took: 0.001 second(s)","timestamp":"2020-09-10T11:22:32.699Z"}
+{"level":"silly","message":"[boot:settings:hapi:configure] started","timestamp":"2020-09-10T11:22:32.719Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes] started","timestamp":"2020-09-10T11:22:32.725Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] started","timestamp":"2020-09-10T11:22:32.725Z"}
+{"took":0.357,"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] took: 0.357 second(s)","timestamp":"2020-09-10T11:22:33.083Z"}
+{"took":0.358,"level":"silly","message":"[boot:settings:routes:Initialising routes] took: 0.358 second(s)","timestamp":"2020-09-10T11:22:33.083Z"}
+{"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] started","timestamp":"2020-09-10T11:22:33.272Z"}
+{"level":"silly","message":"[boot:settings:hapi:register] started","timestamp":"2020-09-10T11:22:33.272Z"}
+{"took":0.003,"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] took: 0.003 second(s)","timestamp":"2020-09-10T11:22:33.276Z"}
+{"level":"silly","message":"[boot:bin:server:init] started","timestamp":"2020-09-10T11:22:33.276Z"}
+{"level":"verbose","message":"[exchange:undefined] using environment: local","timestamp":"2020-09-10T11:22:33.276Z"}
+{"level":"verbose","message":"[exchange:undefined] listening on port: 8255","timestamp":"2020-09-10T11:22:33.276Z"}
+{"level":"verbose","message":"[exchange:undefined] server started : http://127.0.0.1:8255","timestamp":"2020-09-10T11:22:33.332Z"}
+{"took":0.056,"level":"silly","message":"[boot:bin:server:init] took: 0.056 second(s)","timestamp":"2020-09-10T11:22:33.332Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:POST:/api/users/signUp","timestamp":"2020-09-10T11:22:41.835Z"}
+{"level":"verbose","message":"[exchange:undefined] onPostAuth:bodyPayload: {\"loginType\":1,\"fullName\":\"vvss\",\"userRole\":\"employee\",\"email\":\"vvss@yopmai.com\",\"password\":\"test@123\",\"offerCode\":\"\",\"creditType\":0,\"socialId\":\"\",\"timeZone\":\"Asia/Kolkata\"}","timestamp":"2020-09-10T11:22:41.842Z"}
+{"level":"silly","message":"[boot:users:service:signUp] started","timestamp":"2020-09-10T11:22:41.851Z"}
+{"level":"silly","message":"[boot:users:services:getUserByEmail:vvss@yopmai.com] started","timestamp":"2020-09-10T11:22:41.851Z"}
+{"took":0.022,"level":"silly","message":"[boot:users:services:getUserByEmail:vvss@yopmai.com] took: 0.022 second(s)","timestamp":"2020-09-10T11:22:41.873Z"}
+{"took":0.022,"level":"silly","message":"[boot:users:service:signUp] took: 0.022 second(s)","timestamp":"2020-09-10T11:22:41.873Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:POST:/api/users/signUp","timestamp":"2020-09-10T11:22:46.822Z"}
+{"level":"verbose","message":"[exchange:undefined] onPostAuth:bodyPayload: {\"loginType\":1,\"fullName\":\"vvss\",\"userRole\":\"employee\",\"email\":\"vvss1@yopmai.com\",\"password\":\"test@123\",\"offerCode\":\"\",\"creditType\":0,\"socialId\":\"\",\"timeZone\":\"Asia/Kolkata\"}","timestamp":"2020-09-10T11:22:46.824Z"}
+{"level":"silly","message":"[boot:users:service:signUp] started","timestamp":"2020-09-10T11:22:46.825Z"}
+{"level":"silly","message":"[boot:users:services:getUserByEmail:vvss1@yopmai.com] started","timestamp":"2020-09-10T11:22:46.825Z"}
+{"took":0.003,"level":"silly","message":"[boot:users:services:getUserByEmail:vvss1@yopmai.com] took: 0.003 second(s)","timestamp":"2020-09-10T11:22:46.828Z"}
+{"entity":"user","action":"sign-up","level":"debug","message":"[boot:undefined] immediately processing","timestamp":"2020-09-10T11:22:46.858Z"}
+{"handler":"/home/node-02/Downloads/Shelarec/server/processors/user/sign-up/default.js","level":"debug","message":"[boot:undefined] processing","timestamp":"2020-09-10T11:22:46.862Z"}
+{"level":"silly","message":"[processors:user:crete:process] started","timestamp":"2020-09-10T11:22:46.862Z"}
+{"took":0.037,"level":"silly","message":"[boot:users:service:signUp] took: 0.037 second(s)","timestamp":"2020-09-10T11:22:46.862Z"}
+{"level":"silly","message":"[processors:user:crete:process:utils:communication:forward] started","timestamp":"2020-09-10T11:22:46.869Z"}
+{"level":"silly","message":"[processors:user:crete:process:providers:smtp:send] started","timestamp":"2020-09-10T11:22:46.926Z"}
+{"took":0.074,"level":"silly","message":"[processors:user:crete:process:utils:communication:forward] took: 0.074 second(s)","timestamp":"2020-09-10T11:22:46.943Z"}
+{"took":0.081,"level":"silly","message":"[processors:user:crete:process] took: 0.081 second(s)","timestamp":"2020-09-10T11:22:46.943Z"}
+{"message":"[processors:user:crete:process:providers:smtp:send]","stack":"Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials e19sm6149139pfl.135 - gsmtp\n    at SMTPConnection._formatError (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:528:15)\n    at SMTPConnection._actionAUTHComplete (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:1231:30)\n    at SMTPConnection.<anonymous> (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:319:22)\n    at SMTPConnection._processResponse (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:669:16)\n    at SMTPConnection._onData (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:493:10)\n    at TLSSocket.emit (events.js:180:13)\n    at addChunk (_stream_readable.js:269:12)\n    at readableAddChunk (_stream_readable.js:256:11)\n    at TLSSocket.Readable.push (_stream_readable.js:213:10)\n    at TLSWrap.onread (net.js:578:20)","code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials e19sm6149139pfl.135 - gsmtp","responseCode":535,"command":"AUTH PLAIN","level":"error","timestamp":"2020-09-10T11:22:48.260Z"}
+{"level":"info","message":"[processors:user:crete:process:providers:smtp:send] Failed to send email to vvss1@yopmai.com","timestamp":"2020-09-10T11:22:48.262Z"}
+{"took":1.336,"level":"silly","message":"[processors:user:crete:process:providers:smtp:send] took: 1.336 second(s)","timestamp":"2020-09-10T11:22:48.263Z"}
+{"level":"silly","message":"[boot:settings:preparation:configure] started","timestamp":"2020-09-10T11:27:31.397Z"}
+{"took":0.002,"level":"silly","message":"[boot:settings:preparation:configure] took: 0.002 second(s)","timestamp":"2020-09-10T11:27:31.399Z"}
+{"level":"silly","message":"[boot:database:configure] started","timestamp":"2020-09-10T11:27:31.632Z"}
+{"level":"silly","message":"[boot:database:configure:components:models] started","timestamp":"2020-09-10T11:27:31.674Z"}
+{"took":0.075,"level":"silly","message":"[boot:database:configure:components:models] took: 0.075 second(s)","timestamp":"2020-09-10T11:27:31.749Z"}
+{"level":"info","message":"[boot:database:configure] DB Connected on ====== mongodb://localhost:27017/sheladb","timestamp":"2020-09-10T11:27:31.749Z"}
+{"took":0.121,"level":"silly","message":"[boot:database:configure] took: 0.121 second(s)","timestamp":"2020-09-10T11:27:31.753Z"}
+{"level":"silly","message":"[boot:settings:redis:configure] started","timestamp":"2020-09-10T11:27:31.817Z"}
+{"level":"info","message":"[boot:settings:redis:configure] redis bypass","timestamp":"2020-09-10T11:27:31.817Z"}
+{"took":0.001,"level":"silly","message":"[boot:settings:redis:configure] took: 0.001 second(s)","timestamp":"2020-09-10T11:27:31.818Z"}
+{"level":"silly","message":"[boot:settings:hapi:configure] started","timestamp":"2020-09-10T11:27:31.839Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes] started","timestamp":"2020-09-10T11:27:31.844Z"}
+{"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] started","timestamp":"2020-09-10T11:27:31.844Z"}
+{"took":0.363,"level":"silly","message":"[boot:settings:routes:Initialising routes:components:routes] took: 0.363 second(s)","timestamp":"2020-09-10T11:27:32.207Z"}
+{"took":0.363,"level":"silly","message":"[boot:settings:routes:Initialising routes] took: 0.363 second(s)","timestamp":"2020-09-10T11:27:32.207Z"}
+{"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] started","timestamp":"2020-09-10T11:27:32.385Z"}
+{"level":"silly","message":"[boot:settings:hapi:register] started","timestamp":"2020-09-10T11:27:32.385Z"}
+{"took":0.003,"level":"silly","message":"[boot:settings:swagger:configure:REGISTERING HAPI - SWAGGER] took: 0.003 second(s)","timestamp":"2020-09-10T11:27:32.388Z"}
+{"level":"silly","message":"[boot:bin:server:init] started","timestamp":"2020-09-10T11:27:32.388Z"}
+{"level":"verbose","message":"[exchange:undefined] using environment: local","timestamp":"2020-09-10T11:27:32.389Z"}
+{"level":"verbose","message":"[exchange:undefined] listening on port: 8255","timestamp":"2020-09-10T11:27:32.389Z"}
+{"level":"verbose","message":"[exchange:undefined] server started : http://127.0.0.1:8255","timestamp":"2020-09-10T11:27:32.443Z"}
+{"took":0.055,"level":"silly","message":"[boot:bin:server:init] took: 0.055 second(s)","timestamp":"2020-09-10T11:27:32.443Z"}
+{"level":"verbose","message":"[exchange:undefined] onRequest:POST:/api/users/signUp","timestamp":"2020-09-10T11:27:42.993Z"}
+{"level":"verbose","message":"[exchange:undefined] onPostAuth:bodyPayload: {\"loginType\":1,\"fullName\":\"vvss\",\"userRole\":\"employee\",\"email\":\"vvss3@yopmai.com\",\"password\":\"test@123\",\"offerCode\":\"\",\"creditType\":0,\"socialId\":\"\",\"timeZone\":\"Asia/Kolkata\"}","timestamp":"2020-09-10T11:27:43.001Z"}
+{"level":"silly","message":"[boot:users:service:signUp] started","timestamp":"2020-09-10T11:27:43.009Z"}
+{"level":"silly","message":"[boot:users:services:getUserByEmail:vvss3@yopmai.com] started","timestamp":"2020-09-10T11:27:43.009Z"}
+{"took":0.011,"level":"silly","message":"[boot:users:services:getUserByEmail:vvss3@yopmai.com] took: 0.011 second(s)","timestamp":"2020-09-10T11:27:43.020Z"}
+{"entity":"user","action":"sign-up","level":"debug","message":"[boot:undefined] immediately processing","timestamp":"2020-09-10T11:27:43.056Z"}
+{"handler":"/home/node-02/Downloads/Shelarec/server/processors/user/sign-up/default.js","level":"debug","message":"[boot:undefined] processing","timestamp":"2020-09-10T11:27:43.061Z"}
+{"level":"silly","message":"[processors:user:crete:process] started","timestamp":"2020-09-10T11:27:43.061Z"}
+{"took":0.053,"level":"silly","message":"[boot:users:service:signUp] took: 0.053 second(s)","timestamp":"2020-09-10T11:27:43.062Z"}
+{"level":"silly","message":"[processors:user:crete:process:utils:communication:forward] started","timestamp":"2020-09-10T11:27:43.076Z"}
+{"level":"silly","message":"[processors:user:crete:process:providers:smtp:send] started","timestamp":"2020-09-10T11:27:43.133Z"}
+{"took":0.074,"level":"silly","message":"[processors:user:crete:process:utils:communication:forward] took: 0.074 second(s)","timestamp":"2020-09-10T11:27:43.149Z"}
+{"took":0.088,"level":"silly","message":"[processors:user:crete:process] took: 0.088 second(s)","timestamp":"2020-09-10T11:27:43.149Z"}
+{"message":"[processors:user:crete:process:providers:smtp:send]","stack":"Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ev19sm1808878pjb.42 - gsmtp\n    at SMTPConnection._formatError (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:528:15)\n    at SMTPConnection._actionAUTHComplete (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:1231:30)\n    at SMTPConnection.<anonymous> (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:319:22)\n    at SMTPConnection._processResponse (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:669:16)\n    at SMTPConnection._onData (/home/node-02/Downloads/Shelarec/server/node_modules/smtp-connection/lib/smtp-connection.js:493:10)\n    at TLSSocket.emit (events.js:180:13)\n    at addChunk (_stream_readable.js:269:12)\n    at readableAddChunk (_stream_readable.js:256:11)\n    at TLSSocket.Readable.push (_stream_readable.js:213:10)\n    at TLSWrap.onread (net.js:578:20)","code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ev19sm1808878pjb.42 - gsmtp","responseCode":535,"command":"AUTH PLAIN","level":"error","timestamp":"2020-09-10T11:27:45.116Z"}
+{"level":"info","message":"[processors:user:crete:process:providers:smtp:send] Failed to send email to vvss3@yopmai.com","timestamp":"2020-09-10T11:27:45.119Z"}
+{"took":1.987,"level":"silly","message":"[processors:user:crete:process:providers:smtp:send] took: 1.987 second(s)","timestamp":"2020-09-10T11:27:45.120Z"}

@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Socket.IO room</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font: 13px Helvetica, Arial;
+    }
+
+    form {
+        background: #000;
+        padding: 3px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    form input {
+        border: 0;
+        padding: 10px;
+        width: 90%;
+        margin-right: .5%;
+    }
+
+    form button {
+        width: 9%;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 10px;
+    }
+
+    #messages {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #messages li {
+        padding: 5px 10px;
+    }
+
+    #messages li:nth-child(odd) {
+        background: #eee;
+    }
+    </style>
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+$(function() {
+    var socket = io({
+        transportOptions: {
+            polling: {
+                extraHeaders: {
+                    'x-logintoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMjQ5ZTk5YWZlZDI5NDExYzY2OWVkZiIsImlhdCI6MTU0NjI1NjQwMn0.JqavWXzhFAIS6kEdaOQUAABXAv7cauF4Q5gse4_xP0g'
+                }
+            }
+        }
+    });
+
+    socket.on('connect', onConnect);
+
+    function onConnect() {
+        console.log('connected');
+        console.log('emitting room ids join rooms')
+        socket.emit('join', {
+            rooms: ["5b4dea76e60707191d87a5bf"]
+        });
+    }
+
+    socket.on("receiveMessageEvent", function(data) {
+        console.log('data======ATTACHEMNT======', data)
+    })
+
+
+    $('form').submit(function() {
+        console.log('emitting to debut')
+        socket.emit("sendMessage", {
+            "receiverId": "5c29b7f7f426fa2160b4a935",
+            "message": $('#m').val(),
+            "sentTime": 13234
+        }, function(err, data) {
+            console.log('sendMessage called==============', err, data)
+            //$('#messages').append($('<li>').text(JSON.stringify(data)));
+
+            socket.emit("fetchMessages", {
+                receiverId: "5c0a1b0b1e20fe182f433894"
+            }, function(data1) {
+                console.log('fetchMessages============', data1)
+
+
+
+            });
+
+        });
+        $('#m').val('');
+
+
+
+        return false;
+    });
+
+    $('form').submit(function () {
+        console.log('Pushing Message to server')
+        socket.emit("sendMessage", {
+            "to": "5b4dea76e60707191d87a5bf",
+            "message": $('#m').val()
+        }, function (data) {
+            console.log('sendMessage called', JSON.stringify(data))
+            $('#messages').append($('<li>').text(JSON.stringify(data)));
+            socket.emit("deliverReport", {
+                "id": data.id,
+                "isDelivered": true
+            }, function (dataMsg) {
+                $('#messages').append($('<li>').text(JSON.stringify(dataMsg)));
+            });
+            socket.emit("readReport", {
+                "id": data.id,
+                "isRead": true
+            }, function (dataMsg2) {
+                $('#messages').append($('<li>').text(JSON.stringify(dataMsg2)));
+            });
+        });
+        $('#m').val('');
+        return false;
+    });
+
+    socket.on('deliverAcknowledge', function(msg) {
+        $('#messages').append($('<li>').text(JSON.stringify(msg)));
+    })
+    socket.on('readAcknowledge', function(msg) {
+        $('#messages').append($('<li>').text(JSON.stringify(msg)));
+    })
+
+    socket.on('error', (err) => {
+        console.log('error called')
+        console.log(err)
+    })
+
+    socket.on('disconnect', () => {
+        console.log('A user disconnected')
+    })
+
+    socket.on('receiveMessage', function(msg) {
+        console.log('receiveMessage called', JSON.stringify(msg))
+        $('#messages').append($('<li>').text(JSON.stringify(msg)));
+        socket.emit("deliverReport", {
+            "id": msg.id,
+            "isDelivered": true
+        }, function(data) {
+            $('#messages').append($('<li>').text(JSON.stringify(data)));
+        });
+        socket.emit("readReport", {
+            "id": msg.id,
+            "isRead": true
+        }, function(data2) {
+            $('#messages').append($('<li>').text(JSON.stringify(data2)));
+        });
+    });
+});
+</script>
+
+<body>
+    <ul id="messages"></ul>
+    <form action="">
+        <input id="m" autocomplete="off" />
+        <button>Send</button>
+    </form>
+</body>
+
+</html>

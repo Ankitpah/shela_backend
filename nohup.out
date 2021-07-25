@@ -1,0 +1,56 @@
+(node:3673) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[31merror[39m: [boot:database:configure] DB Connection Failed=== message=failed to connect to server [192.168.1.153:27017] on first connect [MongoNetworkError: connection 0 to 192.168.1.153:27017 timed out], stack=MongoNetworkError: failed to connect to server [192.168.1.153:27017] on first connect [MongoNetworkError: connection 0 to 192.168.1.153:27017 timed out]
+    at Pool.<anonymous> (/data/code/back/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at Pool.emit (events.js:198:13)
+    at Connection.<anonymous> (/data/code/back/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/data/code/back/node_modules/mongodb-core/lib/connection/connection.js:257:10)
+    at Object.onceWrapper (events.js:286:20)
+    at Socket.emit (events.js:198:13)
+    at Socket._onTimeout (net.js:442:8)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10), name=MongoNetworkError, errorLabels=[TransientTransactionError]
+[32minfo[39m: [boot:settings:redis:configure] redis bypass
+[36mverbose[39m: [exchange:undefined] using environment: default
+[36mverbose[39m: [exchange:undefined] listening on port: 8255
+[31merror[39m: [boot:bin:server:unhandledRejection] message=listen EADDRNOTAVAIL: address not available 192.168.1.149:8255, stack=Error: listen EADDRNOTAVAIL: address not available 192.168.1.149:8255
+    at Server.setupListenHandle [as _listen2] (net.js:1262:19)
+    at listenInCluster (net.js:1327:12)
+    at doListen (net.js:1460:7)
+    at process._tickCallback (internal/process/next_tick.js:63:19), code=EADDRNOTAVAIL, errno=EADDRNOTAVAIL, syscall=listen, address=192.168.1.149, port=8255
+(node:3864) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[31merror[39m: [boot:database:configure] DB Connection Failed=== message=failed to connect to server [192.168.1.153:27017] on first connect [MongoNetworkError: connection 0 to 192.168.1.153:27017 timed out], stack=MongoNetworkError: failed to connect to server [192.168.1.153:27017] on first connect [MongoNetworkError: connection 0 to 192.168.1.153:27017 timed out]
+    at Pool.<anonymous> (/data/code/back/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at Pool.emit (events.js:198:13)
+    at Connection.<anonymous> (/data/code/back/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/data/code/back/node_modules/mongodb-core/lib/connection/connection.js:257:10)
+    at Object.onceWrapper (events.js:286:20)
+    at Socket.emit (events.js:198:13)
+    at Socket._onTimeout (net.js:442:8)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10), name=MongoNetworkError, errorLabels=[TransientTransactionError]
+[32minfo[39m: [boot:settings:redis:configure] redis bypass
+[36mverbose[39m: [exchange:undefined] using environment: default
+[36mverbose[39m: [exchange:undefined] listening on port: 8255
+[31merror[39m: [boot:bin:server:unhandledRejection] message=listen EADDRNOTAVAIL: address not available 192.168.1.149:8255, stack=Error: listen EADDRNOTAVAIL: address not available 192.168.1.149:8255
+    at Server.setupListenHandle [as _listen2] (net.js:1262:19)
+    at listenInCluster (net.js:1327:12)
+    at doListen (net.js:1460:7)
+    at process._tickCallback (internal/process/next_tick.js:63:19), code=EADDRNOTAVAIL, errno=EADDRNOTAVAIL, syscall=listen, address=192.168.1.149, port=8255
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/data/code/back/back/bin/server.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
